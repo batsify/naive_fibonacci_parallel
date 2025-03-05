@@ -10,4 +10,11 @@
       <DebugType>portable</DebugType>
       <Optimize>true</Optimize>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'ReleaseAOT'">
+      <PublishAot>true</PublishAot>
+      <DefineConstants>$(DefineConstants);RELEASE;TRACE</DefineConstants>
+      <DebugSymbols>false</DebugSymbols>
+      <DebugType>portable</DebugType>
+      <Optimize>true</Optimize>
+  </PropertyGroup>
 </Project>
